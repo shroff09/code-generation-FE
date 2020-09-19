@@ -88,7 +88,7 @@ test('Parent node with childcomponents should have closing tag', () => {
 });
 
 // test 4 
-test('Node with empty style object should be self terminating', () => {
+test('node with empty style obj should not have style prop', () => {
    let input = {
       "type": "div",
       "name": "First Section",
