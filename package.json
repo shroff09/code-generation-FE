@@ -1,0 +1,22 @@
+{
+  "name": "code-generation-fe",
+  "version": "1.0.0",
+  "description": "\"Generate a code string from object\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Newton-School/code-generation-FE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Newton-School/code-generation-FE/issues"
+  },
+  "homepage": "https://github.com/Newton-School/code-generation-FE#readme",
+  "dependencies": {
+    "jest": "^26.4.2"
+  }
+}
