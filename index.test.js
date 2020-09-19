@@ -49,7 +49,7 @@ test('Node with no child should be self terminating', () => {
 
       ]
    }
-   let output = "<FirstSection style={{'color':'#a8a8a8','fontSize':'32px','background':'red'}}/>";
+   let output = `<FirstSection style={{color:"#a8a8a8",fontSize:"32px",background:"red"}}/>`;
    let expectedOutput = removeSpacesFromString(output)
 
    let receivedOutput = removeSpacesFromString(codeGenerator(input))
