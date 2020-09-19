@@ -3,9 +3,10 @@ const codeGenerator = require("./index");
 const removeSpacesFromString = (str) => {
    let transformedString = "";
    let retstr = [];
-   //Split the string with spaces
-   //If string starts with style prop
-   retstr = str.split(" ");
+//  regex to identify new lines and tab spaces
+   var separators = [' ', '\n','\t'];
+   separators.join('|')
+   retstr = str.split(new RegExp(separators.join('|'), 'g'));
 
    for (var i in retstr) {
       if (retstr[i].length > 0)
