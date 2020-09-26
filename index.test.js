@@ -3,8 +3,8 @@ const codeGenerator = require("./index");
 const removeSpacesFromString = (str) => {
    let transformedString = "";
    let retstr = [];
-//  regex to identify new lines and tab spaces
-   var separators = [' ', '\n','\t'];
+   //  regex to identify new lines and tab spaces
+   var separators = [' ', '\n', '\t'];
    separators.join('|')
    retstr = str.split(new RegExp(separators.join('|'), 'g'));
 
@@ -268,7 +268,7 @@ test('All nested child components should be rendered(depth>5) ', () => {
                         <SecondSectionChild2>
                            <SecondSectionChild2Child>
                               <SecondSectionChild2ChildChild>
-                                 <SecondSectionChild2ChildChild/>
+                                 <SecondSectionChild2ChildChildChild/>
                                  </SecondSectionChild2ChildChild>
                               </SecondSectionChild2Child>
                         </SecondSectionChild2>
